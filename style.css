@@ -1,0 +1,268 @@
+/* ---------- Google Fonts ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nunito:wght@400;500;600;700&family=Open+Sans:wght@400;500&family=Overpass:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Jua&family=Mulish:wght@300;400;600;700&display=swap');
+/* Fonts Used{
+    'Kanit', 'Mulish'
+} */
+
+/* ---------- Local Variables */
+:root{
+    --white:#FFFFFF;
+    --Blue:#125BC9;
+    --Black:#070606;
+    --Deep-white:#F4F3EE;
+    --Light-white:#FEFEFF;
+    --small-font-size:.6rem;
+    --medium-font-size:1.1rem;
+    --large-font-size:1.5rem;
+    --Extra-large-font-size:2rem;
+}
+
+
+/* ------- General Styling--------- */
+
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* --------- Scrollbar styling */
+/* width */
+::-webkit-scrollbar {
+    width:0.3em;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+     
+    border-radius: 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:black;
+    opacity: 0;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: .8; 
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+
+body{
+  font-family: 'Mulish', sans-serif;
+  /* height: 1000em; */
+  background-color: #E5E5E5;
+}
+
+/* -------  General styling --------- */
+a{
+  text-decoration: none;
+}
+
+ul,li{
+  list-style: none;
+}
+ 
+/* ---- prevent text selection -------- */
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+/*  ------------ Hedare styling --------- */
+
+header{
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content:left;
+  padding:2% 2%;
+  
+ 
+}
+.logo{
+  width: 20%;
+}
+
+.logo h1{
+  cursor: pointer;
+}
+
+/* -------------Navigation styling ----------- */
+
+nav{
+  width: 40%;
+  margin-top: 1em;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* ----------- Navigation bar links ----------- */
+nav ul li a{
+ color:var(--Black);
+ font-weight: bold;
+ font-size:var(--small-font-size);
+ text-transform: capitalize;
+ position: relative;
+ font-weight: bold;
+}
+
+/* -------- Hover effect ---------- */
+
+nav ul li a:after{
+  content : '';
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: var(--Black);
+  bottom:-13px;
+  left: 0;
+}
+
+nav ul li a:hover:after{
+  width: 100%;
+}
+
+/* --------------- booking styling ------------- */
+#book{
+  width: 12%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  ;
+  background-color:var(--Black);
+
+
+}
+#book a{
+  text-align: center;
+  color: var(--Deep-white) 
+}
+
+.hero-section{
+
+ margin-top: -6.8%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: calc(100%);
+  background-image: url('./img/face2.png');
+  padding-top: 14%;
+}
+
+.hero-section h1{
+  width: 50%;
+  margin: auto;
+  line-height: 1.5em;
+  margin-left: 3em;
+  text-align: center;
+  color: #191919;
+  font-size:3.5rem;
+  text-transform: capitalize;
+}
+
+.hero-section-links{
+  width: 40%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.hero-section-links a{
+  background-color:#070606;
+  color: var(--Deep-white);
+  padding: 3% 10%;
+  font-size:var(--medium-font-size);
+  font-weight: bold;
+}
+
+.hero-section-links a:hover{
+  background-color:#191919;
+}
+
+.wrapper-2{
+ margin-top: 10%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-image: url('./img/left-face.png');
+  padding: 1% 2% ;
+  
+ 
+
+}
+
+.wrapper-2 h1{
+  margin: auto;
+  width: 13%;
+ font-size: 30px;
+ border-bottom: 4px solid var(--Black);
+}
+
+/* --------- .flex-box styling(image wrapper--------- */
+.flex-box{
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.content{
+  width: 32%;
+  height: 17em;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+
+
+.content:hover{
+  background-size: cover;
+}
+
+/* -----------section-2 styling ------- */
+
+.section-2{
+  padding:1% 20%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: calc(100%);
+  background-image: url('./img/face2.png');
+}
+
+p{
+  margin-top: 1%;
+
+}
+
+/* ---------Footer ----------- */
+
+footer{
+ 
+  
+  padding: 1% 2%;
+}
+
+footer p{
+  text-align: center;
+}
