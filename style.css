@@ -247,7 +247,7 @@ nav ul li a:hover:after{
   background-size: contain;
   background-attachment: fixed;
   background-position: calc(100%);
-  background-image: url('./img/face2.png');
+  background-image: url('./img/right-face.png');
 }
 
 p{
